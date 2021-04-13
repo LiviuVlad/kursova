@@ -1,0 +1,8 @@
+$(document).ready(function(){
+
+     $('#searchfor').keyup(function(){
+         page = $('#all_text').text();
+         searchedText = $('#searchfor').val();
+         $("p:contains('"+searchedText+"')").css("color", "red");
+    });
+});

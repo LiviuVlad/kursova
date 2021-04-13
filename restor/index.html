@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web </title>
+<meta name="keywords" content="web , CSS, HTML" />
+<meta name="description" content="Web " />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script language="javascript" type="text/javascript" src="scripts/mootools-1.2.1-core.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/slideitmoo-1.1.js"></script>
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			/* thumbnails example , div containers */
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+</head>
+
+<body id="home">
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href=""></a></h1></div>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a><img src="images/usa.png" alt="English" /></a></li>
+                <li><a><img src="images/china.png" alt="Chinese" /></a></li>
+                <li><a><img src="images/germany.png" alt="Germany" /></a></li>
+                <li><a><img src="images/india.png" alt="Indian" /></a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="templatemo_search">
+                <form action="#" method="get">
+                  <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+                </form>
+            </div>
+         </div> <!-- END -->
+    </div> <!-- END of header -->
+    
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Головна</a></li>
+            <li><a href="products.html">Меню</a>
+                <ul>
+                    <li><a href="#">Супи</a></li>
+                    <li><a href="#">Напої</a></li>
+                    <li><a href="#">Десерти</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">Події</a>
+                <ul>
+                    <li><a href="#">Корпоративи</a></li>
+                    <li><a href="#">Свята</a></li>
+                    <li><a href="#">Ділові зустрічі</a></li>
+                    <li><a href="#">Бенкети</a></li>
+                    <li><a href="#">Вечірки</a></li>
+              </ul>
+            </li>
+            <li><a href="faqs.html">Анонси</a></li>
+            <li><a href="checkout.html">Замовлення</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="templatemo_middle">
+    	<img src="images/templatemo_image_01.png" alt="Image 01" />
+    	<h1>Ресторан "Їжа.ua"</h1>
+        <p><a href="index.html" target="_parent">Про нас</a> Ресторан з доставкою додому</p>
+        <a href="#" class="buy_now">Всі страви</a>
+    </div> <!-- END of middle -->
+    
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+    	<div id="product_slider">
+    		<div id="SlideItMoo_outer">	
+                <div id="SlideItMoo_inner">			
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/1" target="_parent">
+                                <img src="images/gallery/01.jpg" alt="product 1" /></a>
+                        </div>	
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/2" target="_parent">
+                                <img src="images/gallery/02.jpg" alt="product 2" /></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/3" target="_parent">
+                                 <img src="images/gallery/03.jpg" alt="product 3" /></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/4" target="_parent">
+                                <img src="images/gallery/04.jpg" alt="product 4" /></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/5" target="_parent">
+                               <img src="images/gallery/05.jpg" alt="product 5" /></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/6" target="_parent">
+                                <img src="images/gallery/06.jpg" alt="product 6" /></a>
+                        </div>
+                        <div class="SlideItMoo_element">
+                                <a href="http://www.templatemo.com/page/6" target="_parent">
+                                <img src="images/gallery/07.jpg" alt="product 7" /></a>
+                        </div>
+                    </div>			
+                </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+        
+        <div id="sidebar">
+        	<h3>Меню</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">Перші страви</a></li>
+                <li><a href="#">Другі страви</a></li>				
+                <li><a href="#">Напої</a></li>
+                <li><a href="#">Десерти</a></li>				
+            	<li><a href="#">Національна кухня</a></li>
+                <li><a href="#">Європейська кухня</a></li>     
+                <li><a href="#">Китайська кухня</a></li>				
+                <li><a href="#">Японська кухня</a></li>
+				<li><a href="#">Швидка їжа</a></li>
+				<li><a href="#">Піца</a></li>
+				<li><a href="#">Роли</a></li>
+                <li><a href="#">Екзотичні страви</a></li>
+			</ul>
+            <h3>Пошук</h3>
+            <p>Для пошуку введіть назву страви</p>
+            <div id="newsletter">
+                <form action="#" method="get">
+                  <input type="text" value="Subscribe" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Пошук" value="Знайти" alt="Subscribe" id="subscribebtn" title="Знайти" class="subscribebtn"  />
+                </form>
+                <div class="cleaner"></div>
+            </div>
+        </div> <!-- END of sidebar -->
+        
+        <div id="content">
+        	<div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/01.jpg" alt="Product 01" /></a>
+                <h3>Салат</h3>
+                <p class="product_price">100 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/02.jpg" alt="Product 02" /></a>
+                <h3>Грибний суп</h3>
+                <p class="product_price">40 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery no_margin_right">
+            	<a href="productdetail.html"><img src="images/product/03.jpg" alt="Product 03" /></a>
+                <h3>Стейк</h3>
+                <p class="product_price"> 120 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Product 04" /></a>
+                <h3>Риба</h3>
+                <p class="product_price"> 26 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/05.jpg" alt="Product 05" /></a>
+                <h3>Картопля</h3>
+                <p class="product_price"> 80 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery no_margin_right">
+            	<a href="productdetail.html"><img src="images/product/06.jpg" alt="Product 06" /></a>
+                <h3>Панна кота</h3>
+                <p class="product_price"> 193 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/07.jpg" alt="Product 07" /></a>
+                <h3>Десерт</h3>
+                <p class="product_price"> 30 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="productdetail.html"><img src="images/product/08.jpg" alt="Product 08" /></a>
+                <h3>Вина</h3>
+                <p class="product_price"> 220 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+            <div class="col col_14 product_gallery no_margin_right">
+            	<a href="productdetail.html"><img src="images/product/09.jpg" alt="Product 09" /></a>
+                <h3>Кава</h3> 
+                <p class="product_price"> 15 грн</p>
+                <a href="shoppingcart.html" class="add_to_cart">Замовити</a>
+            </div>        	
+        </div> <!-- END of content -->
+        <div class="cleaner"></div>
+    </div> <!-- END of main -->
+    
+    <div id="templatemo_footer">
+    	<div class="col col_16">
+        	
+    </div> <!-- END of footer -->   
+   
+</div>
+
+</body>
+</html>

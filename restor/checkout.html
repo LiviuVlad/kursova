@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web Store Theme - Checkout</title>
+<meta name="keywords" content="web store, checkout, free ecommerce templates, store templates, CSS, HTML" />
+<meta name="description" content="Web Store Theme, Checkout, free CSS template provided by templatemo.com" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+</head>
+
+<body id="subpage">
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="http://www.templatemo.com">Free CSS Templates</a></h1></div>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a><img src="images/usa.png" alt="English" /></a></li>
+                <li><a><img src="images/china.png" alt="Chinese" /></a></li>
+                <li><a><img src="images/germany.png" alt="Germany" /></a></li>
+                <li><a><img src="images/india.png" alt="Indian" /></a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="templatemo_search">
+                <form action="#" method="get">
+                  <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+                </form>
+            </div>
+         </div> <!-- END -->
+    </div> <!-- END of header -->
+    
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="products.html">Меню</a>
+                <ul>
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
+                    <li><a href="#">Sub menu 3</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">Подыъ</a>
+                <ul>
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
+                    <li><a href="#">Sub menu 3</a></li>
+                    <li><a href="#">Sub menu 4</a></li>
+                    <li><a href="#">Sub menu 5</a></li>
+              </ul>
+            </li>
+            <li><a href="faqs.html">Анонси</a></li>
+            <li><a href="checkout.html" class="selected">Замовлення</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+    <div class="cleaner h20"></div>
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+    	
+        <div id="sidebar">
+        	<h3>Меню</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">Перші страви</a></li>
+                <li><a href="#">Другі страви</a></li>				
+                <li><a href="#">Напої</a></li>
+                <li><a href="#">Десерти</a></li>				
+            	<li><a href="#">Національна кухня</a></li>
+                <li><a href="#">Європейська кухня</a></li>     
+                <li><a href="#">Китайська кухня</a></li>				
+                <li><a href="#">Японська кухня</a></li>
+				<li><a href="#">Швидка їжа</a></li>
+				<li><a href="#">Піца</a></li>
+				<li><a href="#">Роли</a></li>
+                <li><a href="#">Екзотичні страви</a></li>
+			</ul>
+            <h3>Пошук</h3>
+            <p>Для пошуку введіть назву страви</p>
+            <div id="newsletter">
+                <form action="#" method="get">
+                  <input type="text" value="Subscribe" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Пошук" value="Знайти" alt="Subscribe" id="subscribebtn" title="Знайти" class="subscribebtn"  />
+                </form>
+                <div class="cleaner"></div>
+            </div>
+        </div> <!-- END of sidebar -->
+       
+        <div id="content">
+       		<h2>Замовлення</h2>
+            <h5><strong>Деталы замовлення</strong></h5>
+            <div class="col col_13 checkout">
+				Введіть ФІО:                				<input type="text"  style="width:300px;"  />
+                Адреса доставки:вулиця
+                <input type="text"  style="width:300px;"  />
+                Будинок:
+                <input type="text"  style="width:300px;"  />
+                Квартира:
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="col col_13 checkout">
+            	E-MAIL
+				<input type="text"  style="width:300px;"  />
+                Телефон<br />
+				<span style="font-size:10px">мобільний</span>
+                <input type="text"  style="width:300px;"  />
+            </div>
+            
+            <div class="cleaner h50"></div>
+            <h3>Всього до сплати</h3>
+            <h4>Сума: <strong>240 грн</strong></h4>
+			<p><input type="checkbox" /> Оплата <a href="#">он-лайн</a>.</p>
+            <table style="border:1px solid #CCCCCC;" width="100%">
+                <tr>
+                    <td height="80px"> <img src="images/paypal.gif" alt="paypal" /></td>
+                    <td width="400px;" style="padding: 0px 20px;">
+                    </td>
+                    <td><a href="#" class="more">Сплатити</a></td>
+                </tr>
+                <tr>
+                    <td  height="80px"><img src="images/2co.gif" alt="paypal" />
+                    </td>
+                    <td  width="400px;" style="padding: 0px 20px;">
+                    </td>
+                    <td><a href="#" class="more">Сплатити</a></td>
+                </tr>
+            </table>
+               
+		</div>
+        <div class="cleaner"></div>
+    </div> <!-- END of main -->
+    
+   
+</div>
+
+</body>
+</html>
